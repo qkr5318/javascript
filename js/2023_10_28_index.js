@@ -165,7 +165,9 @@ function getThisBinding() {
 // this로 사용할 객체
 const thisArg1 = { a: 1 };
 
-console.log("getThisBinding.apply=== " + getThisBinding.apply(thisArg1, [1, 2, 3]));
+console.log(
+  "getThisBinding.apply=== " + getThisBinding.apply(thisArg1, [1, 2, 3])
+);
 console.log("getThisBinding.call=== " + getThisBinding.call(thisArg1, 1, 2, 3));
 
 // apply와 call 메서드를 이용한 Array.prototype.slice 사용
